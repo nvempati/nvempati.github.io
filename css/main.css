@@ -1,0 +1,39 @@
+/*
+*{
+	border: 1px dotted #FF0000 !important;
+}
+
+*/
+ul {
+	list-style: none;
+	padding: auto;
+}
+
+.headerDiv {
+	background-color: #FFA288;
+	height: 40px;
+	padding: 1px;
+	max-width:1080px;
+	display: flex;
+}
+
+.headerDiv li {
+	padding: 0 10px 0 10px;
+	font-weight: bold;
+	border: 1px solid #990000;
+	float: left;
+}
+
+.bodyDiv {
+	height: 250px;
+	padding: 1px;
+	max-width:1080px;
+	display: flex;
+}
+
+.portfolioDiv {
+	height: 400px;
+	padding: 1px;
+	max-width:1080px;
+	display: flex;
+}
