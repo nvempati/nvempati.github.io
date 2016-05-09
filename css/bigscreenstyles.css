@@ -32,8 +32,7 @@ h3 {
 
 /*Start Page structures & specific classess & id's go here*/
 
-/*Topb bar design*/
-
+/*Top bar design*/
 .topbardiv {
   background: #000;
   position: fixed;
@@ -84,37 +83,8 @@ li:hover {
 li:hover * {
   color: #3D3C3A;
 }
-/*#signindiv {
-  margin: auto;
-  color: #ccc;
-  font-weight: bold;
-  font-size: 15px;
-  width: 100px;
-  height:40px;
-}
-#signindiv img {
-  position: relative;
-  top: 5px;
-}
-#searchdiv {
-  float: right;
-  margin: auto;
-}
-#searchdiv input {
-  height: 32px;
-  width: 200px;
-  font-weight: bold;
-  color: #000;
-  border: none;
-  font-size: 14px;
-  padding: 0 5px 0 25px;
-  background-image: url('../images/magnify.png');
-  background-repeat: no-repeat;
-  background-position: left center;
-}*/
 
 /*Main page/fold design*/
-
 .mainfolddiv {
   width: 100%;
   height: 640px;
@@ -191,7 +161,6 @@ li:hover * {
 }
 
 /*Subsequent pages*/
-
 .secondfolddiv {
   position: absolute;
   width: 100%;
@@ -205,8 +174,6 @@ li:hover * {
   margin: 10px auto;
   padding: 15px;
   min-width: 320px;
-/*  border: 1px dotted #F7F8E0;
-*//*  box-shadow: 1px 4px 8px #888; may not need shadow effect with black bakground*/
   border-radius: 2px;
 }
 .itemblock h3 {
