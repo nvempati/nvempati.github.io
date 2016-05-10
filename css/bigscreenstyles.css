@@ -42,7 +42,7 @@ h3 {
   color: #fff;
   z-index: 1000;
   opacity: 1;
-  box-shadow: 0 0 20px #fff;
+  box-shadow: 0 0 30px #fff;
 }
 /*Suspended until finalizing logo*/
 /*.logodiv {
@@ -105,17 +105,16 @@ li:hover * {
   background-image: url("images/mewithmykids500hbw.jpg");
   background-blend-mode: multiply;
   background-size: cover;
-  box-shadow: 0 0 50px #fff;
+  box-shadow: 0 0 30px #fff;
 }
 .mainfoldalpha img {
   width: 100%;
   height: 100%;
-  opacity: 0.85;
+  opacity: 0.95;
   border-radius: 300px;
 }
 .mainfoldalpha:hover img {
-  opacity: 1;
-  box-shadow: 0 0 50px #ccc;
+  box-shadow: 0 0 30px #ccc;
 }
 .mainfoldmessage {
   position: relative;
