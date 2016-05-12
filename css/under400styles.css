@@ -1,9 +1,4 @@
 /*General attributes go here*/
-* {
-  margin: 0;
-  padding: 0;
-  max-width: 100%;
-}
 body {
   margin: 0;
   padding: 0;
@@ -13,7 +8,7 @@ body {
 h3 {
   text-transform: uppercase;
   text-align: center;
-  font-size: 1.25em;
+  font-size: 1em;
   color: #fff;
 }
 .row {
@@ -22,6 +17,7 @@ h3 {
 .wrapper {
   margin: 0;
   padding: 0;
+  max-width: 400px;
 }
 .container {
   background: #F2F2F2;
@@ -35,108 +31,106 @@ h3 {
 /*Top bar design*/
 .topbardiv {
   background: #000;
-  position: fixed;
   float: left;
   width: 100%;
+  max-width: 100vw;
+  min-width: 100vw;
   height: 50px;
   color: #fff;
   z-index: 1000;
   opacity: 1;
-  box-shadow: 0 0 30px #fff;
 }
-/*Suspended until finalizing logo*/
-/*.logodiv {
+.logodiv {
   float: left;
+  height: 100%;
+  width: 20vw;
+}
+.logodiv img {
   background-image: url("images/nlvlogo.jpg");
   background-repeat: no-repeat;
-  background-size: 200px 50px;
-}*/
+  height: 100%;
+  width: 100%;
+}
 #topbarmenu {
-  float: left;
+  float: right;
+  text-align: center;
 }
 #topbarmenu ul {
   margin: 0px;
   padding: 0px;
-  height: 100%;
+  height: 50px;
 }
 #topbarmenu li {
   list-style: none;
   font-weight: bold;
-  font-size: 18px;
-  width: 200px;
-  height: 100%;
-  padding: 15px 60px;
+  font-size: 11px;
+  padding-top: 0;
+  width: 20vw;
+  max-width: 20vw;
+  height: 50px;
   float: left;
   text-transform: uppercase;
   text-align: center;
 }
-a {
+#topbarmenu a {
+  text-align: center;
   text-decoration: none;
   color: #fff;
 }
-li:hover {
+li:focus, li:active {
   background-color: #fff;
   width: 100%;
   height: 100%;
-  box-shadow: 0 0 25px #fff;
 }
-li:hover * {
+li:focus, li:active * {
   color: #3D3C3A;
 }
 
 /*Main page/fold design*/
 .mainfolddiv {
-  width: 100%;
-  height: 640px;
-  overflow: hidden;
+  top: 50px;
+  width: 100vw;
+  max-width: 100vw;
+  height: 300px;
   background: #000;
-  z-index: -1;
+  display: flex;
+  display: -webkit-flex; /* Safari */
+  flex-wrap: wrap;
 }
 .mainfoldalpha {
   position: absolute;
-  margin-left: 80px;
-  top: 15%;
-  left: 20px;
+  margin: 0;
+  padding: 0;
+  top: 50px;
   float: left;
-  width: 500;
-  height: 500px;
-  border: none;
-  border-radius: 300px;
-  background-image: url("images/mewithmykids500hbw.jpg");
-  background-blend-mode: multiply;
-  background-size: cover;
-  box-shadow: 0 0 30px #fff;
 }
 .mainfoldalpha img {
-  width: 100%;
-  height: 100%;
+  background-image: url("images/mewithmykids320wbw.jpg");
+  background-blend-mode: multiply;
+  background-size: cover;
+  width: 100vw;
   opacity: 0.95;
-  border-radius: 300px;
-}
-.mainfoldalpha:hover img {
-  box-shadow: 0 0 30px #ccc;
+  overflow: hidden;
 }
 .mainfoldmessage {
-  position: relative;
-  float: right;
-  width: 40%;
+  float: left;
+  width: 100%;
   height: 100%;
   border: none;
 }
 .message {
   position: relative;
   float: right;
-  width: 100%;
+  width: 50%;
   height: 100%;
-  padding: 50px 20px 50px 0;
   vertical-align: middle;
-  font-size: 2.0em;
+  font-size: 1em;
   font-weight: bold;
   text-align: right;
-  line-height: 2em;
   color: #fff;
   z-index: 2;
   opacity: 0.90;
+  padding-right: 10px;
 }
 #contactbutton {
   background: #FF4000;
@@ -148,7 +142,7 @@ li:hover * {
   color: #000;
   display: inline-block;
 }
-#contactbutton:hover {
+#contactbutton:focus, #contactbutton:active {
   -webkit-transition: background-color 1s ease-out;
   -moz-transition: background-color 1s ease-out;
   -o-transition: background-color 1s ease-out;
@@ -162,33 +156,32 @@ li:hover * {
 /*Subsequent pages*/
 .secondfolddiv {
   position: absolute;
-  width: 100%;
+  align-content: center;
+  justify-content: center;
+  width: 100vw;
   margin: 0;
   padding: 0;
   background: #000;
+  display: flex;
+  flex-wrap: wrap;
 }
 .itemblock {
   background: #000;
-  float: left;
-  margin: 10px auto;
-  padding: 15px;
-  min-width: 320px;
-  border-radius: 2px;
+  padding: 10px 0 0 20px;
+  max-width: 100vw;
+  height: 100%;
 }
 .itemblock h3 {
-  padding-bottom: 20px;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 1.15em;
   color: #fff;
 }
-.grow {
-  transition: all .3s ease;
+.itemblock img {
+  padding: 20px;
+  background-size: contain;
 }
-.grow:hover {
-  transform: scale(1.05);
+.itemblock:focus, .itemblock:active {
   background-color: #fff;
   box-shadow: 0 0 30px #fff;
-}
-.grow:hover h3 {
-  color: #3D3C3A;
+  color: #FF4000;
 }
